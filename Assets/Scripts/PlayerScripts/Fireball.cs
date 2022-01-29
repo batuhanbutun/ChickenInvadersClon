@@ -23,7 +23,7 @@ public class Fireball : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "bird")
+        if (collision.CompareTag("bird"))
         {
             Destroy(gameObject);
         }

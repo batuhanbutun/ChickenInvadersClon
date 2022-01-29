@@ -25,9 +25,9 @@ public class BirdController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.tag == "fire")
+        if (collision.CompareTag("fire") )
             Die();
-        if (collision.tag == "ship")
+        if (collision.CompareTag("ship"))
         {
             _playerController.GetDamage(20f);
             Die();
